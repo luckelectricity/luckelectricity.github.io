@@ -3,17 +3,42 @@
 <head>
   <meta charset="utf-8">
   
-  <title>前端</title>
+  <title>JavaScript简介 | 前端</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="啥也不会">
-<meta property="og:type" content="website">
-<meta property="og:title" content="前端">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="JavaScript简介 
+JavaScript诞生于1995年，它的主要目的是处理以前由服务器语言负责的一些输入验证操作。完整的JavaScript实现由一下三个不同的部分组成：
+
+核心（ECMAScript）
+文档对象模型（DOM）
+浏览器对象模型（BOM）一、JavaScript
+
+1.1 ECMAScriptECMAScript 是由EXMA-262定义的，它提供了核心语言功能。
+Web浏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript简介">
+<meta property="og:url" content="http://yoursite.com/2017/03/07/JavaScript简介/index.html">
 <meta property="og:site_name" content="前端">
-<meta property="og:description" content="啥也不会">
+<meta property="og:description" content="JavaScript简介 
+JavaScript诞生于1995年，它的主要目的是处理以前由服务器语言负责的一些输入验证操作。完整的JavaScript实现由一下三个不同的部分组成：
+
+核心（ECMAScript）
+文档对象模型（DOM）
+浏览器对象模型（BOM）一、JavaScript
+
+1.1 ECMAScriptECMAScript 是由EXMA-262定义的，它提供了核心语言功能。
+Web浏">
+<meta property="og:updated_time" content="2017-03-07T06:30:11.434Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端">
-<meta name="twitter:description" content="啥也不会">
+<meta name="twitter:title" content="JavaScript简介">
+<meta name="twitter:description" content="JavaScript简介 
+JavaScript诞生于1995年，它的主要目的是处理以前由服务器语言负责的一些输入验证操作。完整的JavaScript实现由一下三个不同的部分组成：
+
+核心（ECMAScript）
+文档对象模型（DOM）
+浏览器对象模型（BOM）一、JavaScript
+
+1.1 ECMAScriptECMAScript 是由EXMA-262定义的，它提供了核心语言功能。
+Web浏">
   
     <link rel="alternate" href="/atom.xml" title="前端" type="application/atom+xml">
   
@@ -66,9 +91,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-JavaScript简介" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-JavaScript简介" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/07/JavaScript简介/" class="article-date">
   <time datetime="2017-03-07T06:29:40.000Z" itemprop="datePublished">2017-03-07</time>
@@ -81,8 +104,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/07/JavaScript简介/">JavaScript简介</a>
+    <h1 class="article-title" itemprop="name">
+      JavaScript简介
     </h1>
   
 
@@ -164,127 +187,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-ES6-let" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/02/ES6-let/" class="article-date">
-  <time datetime="2017-03-02T04:27:06.000Z" itemprop="datePublished">2017-03-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/02/ES6-let/">ES6 let</a>
-    </h1>
+    <a href="/2017/03/02/ES6-let/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ES6 let</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、let和const"><a href="#一、let和const" class="headerlink" title="一、let和const"></a>一、let和const</h1><h2 id="1-新增了let命令，用来声明变量，用法与var相同，但是其声明的变量只能在let所在的代码块内有效。"><a href="#1-新增了let命令，用来声明变量，用法与var相同，但是其声明的变量只能在let所在的代码块内有效。" class="headerlink" title="1.新增了let命令，用来声明变量，用法与var相同，但是其声明的变量只能在let所在的代码块内有效。"></a>1.新增了<code>let</code>命令，用来声明变量，用法与<code>var</code>相同，但是其声明的变量只能在<code>let</code>所在的代码块内有效。</h2><pre><code>{
-  let a = 10;
-  var b = 1;
-}
-
-a // ReferenceError: a is not defined.
-b // 1
-</code></pre><hr>
-<h5 id="let和var的区别"><a href="#let和var的区别" class="headerlink" title="let和var的区别"></a>let和var的区别</h5><pre><code>var a = [];
-for (var i = 0; i &lt; 10; i++) {
-  a[i] = function () {
-    console.log(i);
-  };
-}
-a[6](); // 10
-</code></pre><blockquote>
-<p>在上面这个函数中，i是var声明的，在全局中都有效，每次循环都会被覆盖，导致最后输出的是最后一次i的值，所以是10.</p>
-</blockquote>
-<pre><code>var a = [];
-for (let i = 0; i &lt; 10; i++) {
-  a[i] = function () {
-    console.log(i);
-  };
-}
-a[6](); // 6
-</code></pre><blockquote>
-<p>因为i是let声明的，i只在当前本次循环有效，所以每次循环的i都相当于一个新变量。</p>
-</blockquote>
-<h1 id="一句话理解闭包"><a href="#一句话理解闭包" class="headerlink" title="一句话理解闭包"></a>一句话理解闭包</h1><blockquote>
-<h1 id="javascript中的函数运行在它们被定义的作用域里，而不是它们被执行的作用域里。"><a href="#javascript中的函数运行在它们被定义的作用域里，而不是它们被执行的作用域里。" class="headerlink" title="javascript中的函数运行在它们被定义的作用域里，而不是它们被执行的作用域里。"></a>javascript中的函数运行在它们被定义的作用域里，而不是它们被执行的作用域里。</h1></blockquote>
-<p>我来解释下</p>
-<blockquote>
-<p>用let的话，函数运行时因为let是块级作用域，所以函数运行时被定义的作用域是a[i]中的i，所以console.log(i);因为i是无法在外部作用域被访问到的，所以i就是当时保存函数的i值。</p>
-<p>但是如果用var，就是全局作用域，所以无论a[i]中的i为什么，最后console.log(i)中的i在全局是存在的，为10，所以打印出来的就为10。</p>
-</blockquote>
-<h2 id="2-不存在变量提升"><a href="#2-不存在变量提升" class="headerlink" title="2.不存在变量提升"></a>2.不存在变量提升</h2><p><code>let</code>和<code>var</code>不同，不存在变量提升的现象，所以要先声明，后使用，否则会报错</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/02/ES6-let/" data-id="cizz5pp5s00013cqr2w4qkc38" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/02/hello-world/" class="article-date">
-  <time datetime="2017-03-02T03:54:18.315Z" itemprop="datePublished">2017-03-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/02/hello-world/" data-id="cizz5pp5v00023cqrtchxy88s" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
